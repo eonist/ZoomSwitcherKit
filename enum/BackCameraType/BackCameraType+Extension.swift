@@ -8,7 +8,7 @@ import Foundation
      */
     var width: CGFloat {
 		 let numOfLenses = self.numberOfLenses
-       return  (numberOfLenses * buttonWidth) + abs(numOfLenses - 1) * ZoomSwitcher.spaceBetween
+       return (numOfLenses * buttonWidth) + abs(numOfLenses - 1) * ZoomSwitcher.spaceBetween
     }
     /**
      * Returns a string with all focalTypes in a backCameraType

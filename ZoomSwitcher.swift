@@ -25,14 +25,8 @@ extension ZoomSwitcher {
     */
 	func styleBackground() {
 		with(self) {
-			$0.backgroundColor = .gray
+			$0.backgroundColor = style.backgroundColor
 			$0.layer.cornerRadius = frame.height / 2
 		}
 	}
 }
-
-// also make a callback on switch, and a way to set current toggle from external source
-// open the classes etc.
-// add it to a project
-// test it
-// add it to hybridcam
