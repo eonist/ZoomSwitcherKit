@@ -9,7 +9,7 @@ extension ZoomSwitcher {
     */
    @objc open func styleBackground() {
       with(self) {
-         $0.backgroundColor = style.backgroundColor
+         $0.backgroundColor = ZoomSwitcher.style.backgroundColor
          $0.layer.cornerRadius = frame.height / 2
       }
    }

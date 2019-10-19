@@ -1,5 +1,6 @@
 import Foundation
 
+class ToggleButton{}
 extension ToggleButton {
 	/*
     * Turns of other buttons than target

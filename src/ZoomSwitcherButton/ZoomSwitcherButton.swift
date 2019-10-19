@@ -1,6 +1,6 @@
 import Foundation
 
-class ZoomSwitcherButton: ToggleButton {
+open class ZoomSwitcherButton: ToggleButton {
 	init(frame: CGRect) {
 		super.init(frame: frame)
 	}

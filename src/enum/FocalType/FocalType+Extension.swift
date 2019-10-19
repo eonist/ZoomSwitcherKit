@@ -1,10 +1,10 @@
 import Foundation
 
-extension ZoomSwitcher.FocalType {
+extension FocalType {
    /**
     * The zoomFraction is used as text in the different zoombuttons
     */
-   var zoomFraction: CGFloat {
+   public var zoomFraction: CGFloat {
       switch self {
          case .ultraWide: return 0.5
          case .wide: return 1

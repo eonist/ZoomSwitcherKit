@@ -169,8 +169,8 @@
 		F195D94F235B869E00C90136 /* ZoomSwitcherButton */ = {
 			isa = PBXGroup;
 			children = (
-				F195D950235B869E00C90136 /* ToggleButton+Extension.swift */,
 				F195D951235B869E00C90136 /* ZoomSwitcherButton.swift */,
+				F195D950235B869E00C90136 /* ToggleButton+Extension.swift */,
 			);
 			path = ZoomSwitcherButton;
 			sourceTree = "<group>";

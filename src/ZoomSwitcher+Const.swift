@@ -3,9 +3,9 @@ import Foundation
  * Const
  */
 extension ZoomSwitcher {
-  public static var defaultOnSwitch: OnSwitch = { focalType in print("FocalType: \(focalType.rawValue)")}
+  public static var defaultOnSwitch: OnSwitch = { focalType in print("FocalType: \(focalType)")}
   public static let margin: CGFloat = 6
-  public static let style: Style = (backgroundColor: lightGray, buttonStyle: ZoomSwitcherButton.style)
+  public static let style: Style = (backgroundColor: .lightGray, buttonStyle: ZoomSwitcherButton.style)
    /**
     * Returns size of zoomswitcher
     */

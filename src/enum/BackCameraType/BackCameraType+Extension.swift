@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 /**
  * BackCameraType - extensions
  */
@@ -6,22 +6,23 @@ import Foundation
 	 /**
      * Returns the needed width for the entire ZoomSwitcher
      */
-    var width: CGFloat {
-		 let numOfLenses = self.numberOfLenses
-       return (numOfLenses * buttonWidth) + abs(numOfLenses - 1) * ZoomSwitcher.spaceBetween
+    public var width: CGFloat {
+      let numOfLenses: CGFloat = CGFloat(self.numberOfLenses)
+       return (numOfLenses * ZoomSwitcherButton.buttonWidth) + abs(numOfLenses - 1) * ZoomSwitcherButton.spaceBetween
     }
     /**
      * Returns a string with all focalTypes in a backCameraType
 	  * ## Example:
      * print(BackCameraType.triple.description) // "Ultra wide, wide angle, tele"
      */
-    var description: String {
-      return focalTypes.map { $0.rawValue }.joined(separator: ", ")
+    public var description: String {
+      return focalTypes.map { "\($0.rawValue)" }.joined(separator: ", ")
+//      return FocalType.allCases.map { "\($0.rawValue)" }.joined(separator: ", ")
     }
     /**
      * The various back cameras on the various iPhones
      */
-    var focalTypes: [FocalType] {
+    public var focalTypes: [FocalType] {
       switch self {
       case .singleWide: return [.wide] // iPhone 6, 7, 8 etc
       case .dualUltraWideAndWide: return [.ultraWide, .wide] // iPhone X
@@ -32,13 +33,13 @@ import Foundation
 	 /**
      * Returns the backCameraType for the device
      */
-	  static var backCameraType: BackCameraType {
-		  switch UIDevice().type { // let deviceModel = DeviceInfo.model()
-		  	 case .iPhone11pro, .iPhone11promax:
+	  public static var backCameraType: BackCameraType {
+		  switch UIDevice.init().model { // let deviceModel = DeviceInfo.model()
+		  	 case "iPhone11pro", "iPhone11promax":
 				 return .triple
-		 	 case .iPhone11:
+		 	 case "iPhone11":
 				 return .dualUltraWideAndWide
-		    case .iPhoneX, .iPhoneXS, .iPhoneXSmax, .iPhoneXmax, .iPhone7plus, .iPhone8plus:
+		    case "iPhoneX", "iPhoneXS", "iPhoneXSmax", "iPhoneXmax", "iPhone7plus", "iPhone8plus":
 				 return .dualWideAndTele
 		    default:
 		       return .singleWide
@@ -47,5 +48,5 @@ import Foundation
 	  /**
       * Returns the amount of lenses for the backCameraType
       */
-	  var numberOfLenses: Int { backCameraType.focalTypes.count }
+	  public var numberOfLenses: Int { return focalTypes.count }
  }
