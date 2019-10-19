@@ -2,7 +2,7 @@ import Foundation
 /**
  * ZoomSwitcher
  */
-class ZoomSwitcher {
+open class ZoomSwitcher: UIView {
    public let backCameraType: BackCameraType
 	public var onSwitch: OnSwitch
 	/**
@@ -12,21 +12,16 @@ class ZoomSwitcher {
 	 * addSubview(zoomSwitcher)
 	 * zoomSwitcher.anchorAndSize(to: self, size: size)
     */
-   init(frame: CGRect, backCameraType: BackCameraType, onSwitch: OnSwitch = defaultOnSwitch) {
+   public init(frame: CGRect, backCameraType: BackCameraType, onSwitch: OnSwitch = defaultOnSwitch) {
       self.backCameraType = backCameraType
-		self onSwitch = onSwitch
+		self.onSwitch = onSwitch
       super.init(frame: frame)
 		styleBackground()
    }
-}
-extension ZoomSwitcher {
-	/**
-    * Style the background
+   /**
+    * Boilerplate
     */
-	func styleBackground() {
-		with(self) {
-			$0.backgroundColor = style.backgroundColor
-			$0.layer.cornerRadius = frame.height / 2
-		}
-	}
+   required init?(coder aDecoder: NSCoder) {
+      fatalError("init(coder:) has not been implemented")
+   }
 }
