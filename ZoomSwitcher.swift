@@ -4,22 +4,35 @@ import Foundation
  */
 class ZoomSwitcher {
    public let backCameraType: BackCameraType
+	public var onSwitch: OnSwitch
 	/**
-    * ## Example
-	 * let zoomSwitcher: ZoomSwitcher = .init(backCameraType: .backCameraType)
+    * ## Examples:
+	 * let size = ZoomSwitcher.getSize(backCamType: BackCameraType.backCameraType)
+	 * let zoomSwitcher: ZoomSwitcher = .init(frame: .init(origin: .zero, size: size), backCameraType: .backCameraType)
 	 * addSubview(zoomSwitcher)
-	 * zoomSwitcher.anchorAndSize(to: self, width: zoomSwitcher.backCameraType, height: ZoomSwitcher.height)
+	 * zoomSwitcher.anchorAndSize(to: self, size: size)
     */
-   init(backCameraType: BackCameraType) {
+   init(frame: CGRect, backCameraType: BackCameraType, onSwitch: OnSwitch = defaultOnSwitch) {
       self.backCameraType = backCameraType
-		let componentSize: CGSize = .init(width: backCameraType.componentWidth, buttonWidth)
-      let frame: CGRect = .init(origin: .zero, size: componentSize)
+		self onSwitch = onSwitch
       super.init(frame: frame)
+		styleBackground()
    }
-   // if single camera
-      // only make 1 button
-   // if dual camera
-      // make two buttons
-   // if triple camera
-      // make three buttons
 }
+extension ZoomSwitcher {
+	/**
+    * Style the background
+    */
+	func styleBackground() {
+		with(self) {
+			$0.backgroundColor = .gray
+			$0.layer.cornerRadius = frame.height / 2
+		}
+	}
+}
+
+// also make a callback on switch, and a way to set current toggle from external source
+// open the classes etc.
+// add it to a project
+// test it
+// add it to hybridcam

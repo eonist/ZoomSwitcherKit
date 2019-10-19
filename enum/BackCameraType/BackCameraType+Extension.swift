@@ -7,10 +7,12 @@ import Foundation
      * Returns the needed width for the entire ZoomSwitcher
      */
     var width: CGFloat {
-      return (self.rawValue() + 1) * buttonWidth
+		 let numOfLenses = self.numberOfLenses
+       return  (numberOfLenses * buttonWidth) + abs(numOfLenses - 1) * ZoomSwitcher.spaceBetween
     }
     /**
-     * ## Example:
+     * Returns a string with all focalTypes in a backCameraType
+	  * ## Example:
      * print(BackCameraType.triple.description) // "Ultra wide, wide angle, tele"
      */
     var description: String {
@@ -42,4 +44,8 @@ import Foundation
 		       return .singleWide
 		    }
 	  }
+	  /**
+      * Returns the amount of lenses for the backCameraType
+      */
+	  var numberOfLenses: Int { backCameraType.focalTypes.count }
  }

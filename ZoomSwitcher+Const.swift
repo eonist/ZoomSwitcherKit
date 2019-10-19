@@ -1,8 +1,17 @@
 import Foundation
 /**
- * 
+ * Const
  */
 extension ZoomSwitcher {
-  static let buttonWidth: CGFloat = 42
-  static let spaceBetween: CGFloat = 12
+  public static var defaultOnSwitch: OnSwitch = { focalType in print("FocalType: \(focalType.rawValue)")}
+  public static let margin: CGFloat = 6
+  static let style: Style = (backgroundColor: lightGray, buttonStyle: ZoomSwitcherButton.style)
+   /**
+    * Returns size of zoomswitcher
+    */
+  public static func getSize(backCamType: BackCameraType) -> CGSize {
+     let width = BackCameraType.backCameraType.width + margin + margin
+     let height = ZoomSwitcherButton.buttonWidth + margin + margin
+     return .init(width: width, height: height)
+  }()
 }

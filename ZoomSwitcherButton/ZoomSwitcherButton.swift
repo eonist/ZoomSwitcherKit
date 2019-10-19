@@ -5,9 +5,6 @@ class ZoomSwitcherButton: ToggleButton {
 		super.init(frame: frame)
 	}
 }
-extension ZoomSwitcherButton {
-
-}
 /**
  * Setter
  */
@@ -25,7 +22,13 @@ extension ZoomSwitcherButton {
  * Const
  */
 extension ZoomSwitcherButton {
+	static let spaceBetween: CGFloat = 12
+	static let buttonWidth: CGFloat = 42
 	typealias Style = (textColor: UIColor, backgroundColor: UIColor)
+	static let style: Style = (backgroundColor: .gray, textColor: .white)
 	static let on: Style = (.white, .gray)
 	static let off: Style = (.gray, .white)
+	static let rect: CGRect = {
+		return .init(origin: .zero, size: .init(width: ZoomSwitcherButton.buttonWidth, height: ZoomSwitcherButton.buttonWidth))
+	}()
 }
