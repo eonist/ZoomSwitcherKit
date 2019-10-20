@@ -17,7 +17,7 @@ extension BackCameraType {
     */
    public var description: String {
       return focalTypes.map { "\($0.rawValue)" }.joined(separator: ", ")
-      //      return FocalType.allCases.map { "\($0.rawValue)" }.joined(separator: ", ")
+      //return FocalType.allCases.map { "\($0.rawValue)" }.joined(separator: ", ")
    }
    /**
     * The various back cameras on the various iPhones
@@ -34,12 +34,13 @@ extension BackCameraType {
     * Returns the backCameraType for the device
     */
    public static var backCameraType: BackCameraType {
-      switch UIDevice.init().model { // let deviceModel = DeviceInfo.model()
-      case "iPhone11pro", "iPhone11promax":
+      //Swift.print("UIDevice.modelName:  \(UIDevice.init().modelName)")
+      switch UIDevice.init().modelName {
+      case .iPhone11Pro, .iPhone11ProMax:
          return .triple
-      case "iPhone11":
+      case .iPhone11:
          return .dualUltraWideAndWide
-      case "iPhoneX", "iPhoneXS", "iPhoneXSmax", "iPhoneXmax", "iPhone7plus", "iPhone8plus":
+      case .iPhoneX, .iPhoneXS, .iPhoneXSMax, .iPhone7Plus, .iPhone8Plus, .iPhoneXR:
          return .dualWideAndTele
       default:
          return .singleWide
@@ -49,4 +50,11 @@ extension BackCameraType {
     * Returns the amount of lenses for the backCameraType
     */
    public var numberOfLenses: Int { return focalTypes.count }
+   /**
+    * Tripple back cameras the default lense button is in the center, all else is to the left
+    * - Note: 0.5X, 1.0x, 2.0x
+    */
+   public var defaultLenseIndex: Int {
+      return BackCameraType.backCameraType == .triple ? 1 : 0
+   }
 }
