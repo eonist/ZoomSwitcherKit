@@ -10,13 +10,14 @@ extension ZoomSwitcher {
    /**
     * Creates the buttons
     */
-   @objc open func createButtons(backCameraType: BackCameraType) -> [ZoomSwitcherButton] {
+   open func createButtons(backCameraType: BackCameraType) -> [ZoomSwitcherButton] {
       return backCameraType.focalTypes.enumerated().map { i, focalType in 
          return with(.init(frame: ZoomSwitcherButton.rect)) { btn in
-            btn.text = "\(focalType.zoomFraction)" // The zoom fraction for the text in the button
-            btn.onButtonTouched = onButtonTouched // Assigns callback
-            btn.frame.origin = (i * ZoomSwitcherButton.buttonWidth) + ZoomSwitcher.spaceBetween
+            btn.setTitle("\(focalType.zoomFraction)x", for: .normal) // The zoom fraction for the text in the button
+            btn.onToggle = self.onButtonToggle // Assigns callback
+            btn.frame.origin.x = (CGFloat(i) * ZoomSwitcherButton.buttonWidth) + ZoomSwitcherButton.spaceBetween
             self.addSubview(btn)
          }
       }
+   }
 }

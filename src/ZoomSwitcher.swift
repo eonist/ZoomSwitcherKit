@@ -25,4 +25,3 @@ open class ZoomSwitcher: UIView {
       fatalError("init(coder:) has not been implemented")
    }
 }
-
