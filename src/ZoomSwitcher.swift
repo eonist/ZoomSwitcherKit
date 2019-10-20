@@ -4,7 +4,7 @@ import Foundation
  */
 open class ZoomSwitcher: UIView {
    public let backCameraType: BackCameraType
-   public var onSwitch: OnSwitch
+   @objc public var onSwitch: OnSwitch
    public lazy var buttons: [ZoomSwitcherButton] = createButtons(backCameraType: backCameraType)
    /**
     * ## Examples:

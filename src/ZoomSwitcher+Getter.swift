@@ -14,7 +14,7 @@ extension ZoomSwitcher {
    /**
     * Returns selected focaltype
     */
-   public var selectedFocalType: FocalType {
+   @objc public var selectedFocalType: FocalType {
       guard let index: Int = self.buttons.firstIndex(where: { $0.toggle }) else { fatalError("not supported") }
       return backCameraType.focalTypes[index]
    }
