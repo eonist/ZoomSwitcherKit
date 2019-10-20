@@ -2,7 +2,7 @@ import UIKit
 /**
  * Interaction
  */
-extension ToggleButton {
+extension ToggleBtn {
    /**
     * This is fired then the user presses the button
     */

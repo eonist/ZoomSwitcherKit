@@ -2,7 +2,7 @@ import UIKit
 /**
  * Interaction
  */
-extension RoundButton {
+extension RoundBtn {
    /**
     * This is fired then the user presses the button
     */

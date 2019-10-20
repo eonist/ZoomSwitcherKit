@@ -16,7 +16,7 @@
 		F195D947235B85CE00C90136 /* ZoomSwitcherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195D940235B85CE00C90136 /* ZoomSwitcherKit.framework */; };
 		F195D948235B85CE00C90136 /* ZoomSwitcherKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F195D940235B85CE00C90136 /* ZoomSwitcherKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F195D956235B869E00C90136 /* ZoomSwitcher+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D94E235B869D00C90136 /* ZoomSwitcher+Create.swift */; };
-		F195D957235B869E00C90136 /* ToggleButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D950235B869E00C90136 /* ToggleButton+Extension.swift */; };
+		F195D957235B869E00C90136 /* ToggleBtn+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D950235B869E00C90136 /* ToggleBtn+Extension.swift */; };
 		F195D958235B869E00C90136 /* ZoomSwitcherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D951235B869E00C90136 /* ZoomSwitcherButton.swift */; };
 		F195D959235B869E00C90136 /* ZoomSwitcher+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D952235B869E00C90136 /* ZoomSwitcher+Handler.swift */; };
 		F195D95A235B869E00C90136 /* ZoomSwitcher+Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D953235B869E00C90136 /* ZoomSwitcher+Typealias.swift */; };
@@ -30,13 +30,13 @@
 		F195D96D235B8B1D00C90136 /* FocalType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D968235B8B1D00C90136 /* FocalType+Extension.swift */; };
 		F195D96E235B8B1D00C90136 /* BackCameraType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D96A235B8B1D00C90136 /* BackCameraType+Extension.swift */; };
 		F195D96F235B8B1D00C90136 /* BackCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D96B235B8B1D00C90136 /* BackCameraType.swift */; };
-		F195D976235C465500C90136 /* ToggleButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D971235C465500C90136 /* ToggleButton+Event.swift */; };
-		F195D977235C465500C90136 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D972235C465500C90136 /* ToggleButton.swift */; };
-		F195D978235C465500C90136 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D974235C465500C90136 /* RoundButton.swift */; };
-		F195D979235C465500C90136 /* RoundButton+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D975235C465500C90136 /* RoundButton+Event.swift */; };
-		F195D980235C46C800C90136 /* ToggleButtonKind+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97B235C46C800C90136 /* ToggleButtonKind+Const.swift */; };
-		F195D981235C46C800C90136 /* ToggleButtonKind+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97C235C46C800C90136 /* ToggleButtonKind+TypeAlias.swift */; };
-		F195D983235C46C800C90136 /* ToggleButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97E235C46C800C90136 /* ToggleButtonKind.swift */; };
+		F195D976235C465500C90136 /* ToggleBtn+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D971235C465500C90136 /* ToggleBtn+Event.swift */; };
+		F195D977235C465500C90136 /* ToggleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D972235C465500C90136 /* ToggleBtn.swift */; };
+		F195D978235C465500C90136 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D974235C465500C90136 /* RoundBtn.swift */; };
+		F195D979235C465500C90136 /* RoundBtn+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D975235C465500C90136 /* RoundBtn+Event.swift */; };
+		F195D980235C46C800C90136 /* ToggleBtnKind+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97B235C46C800C90136 /* ToggleBtnKind+Const.swift */; };
+		F195D981235C46C800C90136 /* ToggleBtnKind+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97C235C46C800C90136 /* ToggleBtnKind+TypeAlias.swift */; };
+		F195D983235C46C800C90136 /* ToggleBtnKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97E235C46C800C90136 /* ToggleBtnKind.swift */; };
 		F195D986235C470C00C90136 /* ZoomSwitcherButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D985235C470C00C90136 /* ZoomSwitcherButton+Const.swift */; };
 		F195D988235C471D00C90136 /* ZoomSwitcherButton+Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D987235C471D00C90136 /* ZoomSwitcherButton+Setter.swift */; };
 		F195D98A235C476A00C90136 /* ZoomSwitcherButton+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D989235C476A00C90136 /* ZoomSwitcherButton+Config.swift */; };
@@ -82,7 +82,7 @@
 		F195D942235B85CE00C90136 /* ZoomSwitcherKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomSwitcherKit.h; sourceTree = "<group>"; };
 		F195D943235B85CE00C90136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F195D94E235B869D00C90136 /* ZoomSwitcher+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcher+Create.swift"; sourceTree = "<group>"; };
-		F195D950235B869E00C90136 /* ToggleButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButton+Extension.swift"; sourceTree = "<group>"; };
+		F195D950235B869E00C90136 /* ToggleBtn+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleBtn+Extension.swift"; sourceTree = "<group>"; };
 		F195D951235B869E00C90136 /* ZoomSwitcherButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomSwitcherButton.swift; sourceTree = "<group>"; };
 		F195D952235B869E00C90136 /* ZoomSwitcher+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcher+Handler.swift"; sourceTree = "<group>"; };
 		F195D953235B869E00C90136 /* ZoomSwitcher+Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcher+Typealias.swift"; sourceTree = "<group>"; };
@@ -95,13 +95,13 @@
 		F195D968235B8B1D00C90136 /* FocalType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FocalType+Extension.swift"; sourceTree = "<group>"; };
 		F195D96A235B8B1D00C90136 /* BackCameraType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BackCameraType+Extension.swift"; sourceTree = "<group>"; };
 		F195D96B235B8B1D00C90136 /* BackCameraType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackCameraType.swift; sourceTree = "<group>"; };
-		F195D971235C465500C90136 /* ToggleButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButton+Event.swift"; sourceTree = "<group>"; };
-		F195D972235C465500C90136 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
-		F195D974235C465500C90136 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		F195D975235C465500C90136 /* RoundButton+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoundButton+Event.swift"; sourceTree = "<group>"; };
-		F195D97B235C46C800C90136 /* ToggleButtonKind+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButtonKind+Const.swift"; sourceTree = "<group>"; };
-		F195D97C235C46C800C90136 /* ToggleButtonKind+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleButtonKind+TypeAlias.swift"; sourceTree = "<group>"; };
-		F195D97E235C46C800C90136 /* ToggleButtonKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButtonKind.swift; sourceTree = "<group>"; };
+		F195D971235C465500C90136 /* ToggleBtn+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleBtn+Event.swift"; sourceTree = "<group>"; };
+		F195D972235C465500C90136 /* ToggleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleBtn.swift; sourceTree = "<group>"; };
+		F195D974235C465500C90136 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		F195D975235C465500C90136 /* RoundBtn+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoundBtn+Event.swift"; sourceTree = "<group>"; };
+		F195D97B235C46C800C90136 /* ToggleBtnKind+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleBtnKind+Const.swift"; sourceTree = "<group>"; };
+		F195D97C235C46C800C90136 /* ToggleBtnKind+TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleBtnKind+TypeAlias.swift"; sourceTree = "<group>"; };
+		F195D97E235C46C800C90136 /* ToggleBtnKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleBtnKind.swift; sourceTree = "<group>"; };
 		F195D985235C470C00C90136 /* ZoomSwitcherButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherButton+Const.swift"; sourceTree = "<group>"; };
 		F195D987235C471D00C90136 /* ZoomSwitcherButton+Setter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherButton+Setter.swift"; sourceTree = "<group>"; };
 		F195D989235C476A00C90136 /* ZoomSwitcherButton+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherButton+Config.swift"; sourceTree = "<group>"; };
@@ -235,9 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				F195D97A235C46C800C90136 /* ToggleButtonKind */,
-				F195D972235C465500C90136 /* ToggleButton.swift */,
-				F195D971235C465500C90136 /* ToggleButton+Event.swift */,
-				F195D950235B869E00C90136 /* ToggleButton+Extension.swift */,
+				F195D972235C465500C90136 /* ToggleBtn.swift */,
+				F195D971235C465500C90136 /* ToggleBtn+Event.swift */,
+				F195D950235B869E00C90136 /* ToggleBtn+Extension.swift */,
 			);
 			path = ToggleButton;
 			sourceTree = "<group>";
@@ -245,8 +245,8 @@
 		F195D973235C465500C90136 /* RoundButton */ = {
 			isa = PBXGroup;
 			children = (
-				F195D974235C465500C90136 /* RoundButton.swift */,
-				F195D975235C465500C90136 /* RoundButton+Event.swift */,
+				F195D974235C465500C90136 /* RoundBtn.swift */,
+				F195D975235C465500C90136 /* RoundBtn+Event.swift */,
 			);
 			path = RoundButton;
 			sourceTree = "<group>";
@@ -254,9 +254,9 @@
 		F195D97A235C46C800C90136 /* ToggleButtonKind */ = {
 			isa = PBXGroup;
 			children = (
-				F195D97B235C46C800C90136 /* ToggleButtonKind+Const.swift */,
-				F195D97C235C46C800C90136 /* ToggleButtonKind+TypeAlias.swift */,
-				F195D97E235C46C800C90136 /* ToggleButtonKind.swift */,
+				F195D97E235C46C800C90136 /* ToggleBtnKind.swift */,
+				F195D97B235C46C800C90136 /* ToggleBtnKind+Const.swift */,
+				F195D97C235C46C800C90136 /* ToggleBtnKind+TypeAlias.swift */,
 			);
 			path = ToggleButtonKind;
 			sourceTree = "<group>";
@@ -433,29 +433,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F195D959235B869E00C90136 /* ZoomSwitcher+Handler.swift in Sources */,
-				F195D976235C465500C90136 /* ToggleButton+Event.swift in Sources */,
+				F195D976235C465500C90136 /* ToggleBtn+Event.swift in Sources */,
 				F195D958235B869E00C90136 /* ZoomSwitcherButton.swift in Sources */,
-				F195D980235C46C800C90136 /* ToggleButtonKind+Const.swift in Sources */,
-				F195D979235C465500C90136 /* RoundButton+Event.swift in Sources */,
+				F195D980235C46C800C90136 /* ToggleBtnKind+Const.swift in Sources */,
+				F195D979235C465500C90136 /* RoundBtn+Event.swift in Sources */,
 				F195D98A235C476A00C90136 /* ZoomSwitcherButton+Config.swift in Sources */,
 				F195D98F235C71E200C90136 /* UIDevice+Extension.swift in Sources */,
-				F195D983235C46C800C90136 /* ToggleButtonKind.swift in Sources */,
+				F195D983235C46C800C90136 /* ToggleBtnKind.swift in Sources */,
 				F195D96E235B8B1D00C90136 /* BackCameraType+Extension.swift in Sources */,
 				F195D956235B869E00C90136 /* ZoomSwitcher+Create.swift in Sources */,
 				F195D95B235B869E00C90136 /* ZoomSwitcher.swift in Sources */,
 				F195D986235C470C00C90136 /* ZoomSwitcherButton+Const.swift in Sources */,
-				F195D978235C465500C90136 /* RoundButton.swift in Sources */,
+				F195D978235C465500C90136 /* RoundBtn.swift in Sources */,
 				F195D991235C72ED00C90136 /* UIDevice.DeviceType.swift in Sources */,
 				F195D96C235B8B1D00C90136 /* FocalType.swift in Sources */,
-				F195D977235C465500C90136 /* ToggleButton.swift in Sources */,
+				F195D977235C465500C90136 /* ToggleBtn.swift in Sources */,
 				F195D95E235B875300C90136 /* ZoomSwitcher+Setter.swift in Sources */,
 				F195D988235C471D00C90136 /* ZoomSwitcherButton+Setter.swift in Sources */,
 				F195D96F235B8B1D00C90136 /* BackCameraType.swift in Sources */,
 				F195D99D235C9D2900C90136 /* ZoomSwitcher+Getter.swift in Sources */,
 				F195D95A235B869E00C90136 /* ZoomSwitcher+Typealias.swift in Sources */,
 				F195D95C235B869E00C90136 /* ZoomSwitcher+Const.swift in Sources */,
-				F195D957235B869E00C90136 /* ToggleButton+Extension.swift in Sources */,
-				F195D981235C46C800C90136 /* ToggleButtonKind+TypeAlias.swift in Sources */,
+				F195D957235B869E00C90136 /* ToggleBtn+Extension.swift in Sources */,
+				F195D981235C46C800C90136 /* ToggleBtnKind+TypeAlias.swift in Sources */,
 				F195D96D235B8B1D00C90136 /* FocalType+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

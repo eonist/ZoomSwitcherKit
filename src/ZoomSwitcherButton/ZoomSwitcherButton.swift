@@ -1,7 +1,7 @@
 import Foundation
 import With
 
-open class ZoomSwitcherButton: ToggleButton {
+open class ZoomSwitcherButton: ToggleBtn {
    override open var toggle: Bool { didSet { setToggle(toggle: toggle) } }
    override public init(frame: CGRect) {
 		super.init(frame: frame)
