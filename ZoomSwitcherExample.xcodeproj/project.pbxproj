@@ -39,7 +39,6 @@
 		F195D983235C46C800C90136 /* ToggleBtnKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D97E235C46C800C90136 /* ToggleBtnKind.swift */; };
 		F195D986235C470C00C90136 /* ZoomSwitcherButton+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D985235C470C00C90136 /* ZoomSwitcherButton+Const.swift */; };
 		F195D988235C471D00C90136 /* ZoomSwitcherButton+Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D987235C471D00C90136 /* ZoomSwitcherButton+Setter.swift */; };
-		F195D98A235C476A00C90136 /* ZoomSwitcherButton+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D989235C476A00C90136 /* ZoomSwitcherButton+Config.swift */; };
 		F195D98F235C71E200C90136 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D98E235C71E200C90136 /* UIDevice+Extension.swift */; };
 		F195D991235C72ED00C90136 /* UIDevice.DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D990235C72ED00C90136 /* UIDevice.DeviceType.swift */; };
 		F195D99D235C9D2900C90136 /* ZoomSwitcher+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D99C235C9D2900C90136 /* ZoomSwitcher+Getter.swift */; };
@@ -104,7 +103,6 @@
 		F195D97E235C46C800C90136 /* ToggleBtnKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleBtnKind.swift; sourceTree = "<group>"; };
 		F195D985235C470C00C90136 /* ZoomSwitcherButton+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherButton+Const.swift"; sourceTree = "<group>"; };
 		F195D987235C471D00C90136 /* ZoomSwitcherButton+Setter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherButton+Setter.swift"; sourceTree = "<group>"; };
-		F195D989235C476A00C90136 /* ZoomSwitcherButton+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcherButton+Config.swift"; sourceTree = "<group>"; };
 		F195D98E235C71E200C90136 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		F195D990235C72ED00C90136 /* UIDevice.DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.DeviceType.swift; sourceTree = "<group>"; };
 		F195D99C235C9D2900C90136 /* ZoomSwitcher+Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZoomSwitcher+Getter.swift"; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				F195D951235B869E00C90136 /* ZoomSwitcherButton.swift */,
 				F195D985235C470C00C90136 /* ZoomSwitcherButton+Const.swift */,
 				F195D987235C471D00C90136 /* ZoomSwitcherButton+Setter.swift */,
-				F195D989235C476A00C90136 /* ZoomSwitcherButton+Config.swift */,
 			);
 			path = ZoomSwitcherButton;
 			sourceTree = "<group>";
@@ -437,7 +434,6 @@
 				F195D958235B869E00C90136 /* ZoomSwitcherButton.swift in Sources */,
 				F195D980235C46C800C90136 /* ToggleBtnKind+Const.swift in Sources */,
 				F195D979235C465500C90136 /* RoundBtn+Event.swift in Sources */,
-				F195D98A235C476A00C90136 /* ZoomSwitcherButton+Config.swift in Sources */,
 				F195D98F235C71E200C90136 /* UIDevice+Extension.swift in Sources */,
 				F195D983235C46C800C90136 /* ToggleBtnKind.swift in Sources */,
 				F195D96E235B8B1D00C90136 /* BackCameraType+Extension.swift in Sources */,
