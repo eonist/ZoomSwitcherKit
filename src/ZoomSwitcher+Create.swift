@@ -12,7 +12,7 @@ extension ZoomSwitcher {
     */
    open func createButtons(backCameraType: BackCameraType) -> [ZoomSwitcherButton] {
       return backCameraType.focalTypes.enumerated().map { i, focalType in
-         return with(.init(frame: ZoomSwitcherButton.rect)) {
+         with(.init(frame: ZoomSwitcherButton.rect)) {
             let title: String = "\(focalType.zoomFraction)x"
             $0.setTitle(title, for: .normal) // The zoom fraction for the text in the button
             $0.onToggle = self.onButtonToggle // Assigns callback

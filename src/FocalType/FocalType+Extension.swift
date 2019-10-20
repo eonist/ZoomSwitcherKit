@@ -6,9 +6,9 @@ extension FocalType {
     */
    public var zoomFraction: CGFloat {
       switch self {
-         case .ultraWide: return 0.5
-         case .wide: return 1
-         case .tele: return 2
+      case .ultraWide: return 0.5
+      case .wide: return 1
+      case .tele: return 2
       }
    }
 }

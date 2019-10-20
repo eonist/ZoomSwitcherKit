@@ -1,6 +1,6 @@
 import Foundation
 
-public extension UIDevice {
+extension UIDevice {
    /**
     * pares the deveice name as the standard name
     */
@@ -12,7 +12,7 @@ public extension UIDevice {
       uname(&systemInfo)
       let machineMirror = Mirror(reflecting: systemInfo.machine)
       let identifier = machineMirror.children.reduce("") { identifier, element in
-         guard let value = element.value as? Int8 , value != 0 else { return identifier }
+         guard let value = element.value as? Int8, value != 0 else { return identifier }
          return identifier + String(UnicodeScalar(UInt8(value)))
       }
       #endif

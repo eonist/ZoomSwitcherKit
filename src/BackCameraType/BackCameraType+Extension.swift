@@ -7,7 +7,7 @@ extension BackCameraType {
     * Returns the needed width for the entire ZoomSwitcher
     */
    public var width: CGFloat {
-      let numOfLenses: CGFloat = CGFloat(self.numberOfLenses)
+      let numOfLenses: CGFloat = .init(self.numberOfLenses)
       return (numOfLenses * ZoomSwitcherButton.buttonWidth) + abs(numOfLenses - 1) * ZoomSwitcherButton.spaceBetween
    }
    /**
@@ -35,7 +35,8 @@ extension BackCameraType {
     */
    public static var backCameraType: BackCameraType {
       //Swift.print("UIDevice.modelName:  \(UIDevice.init().modelName)")
-      switch UIDevice.init().modelName {
+      let device: UIDevice = .init()
+      switch device.modelName {
       case .iPhone11Pro, .iPhone11ProMax:
          return .triple
       case .iPhone11:
