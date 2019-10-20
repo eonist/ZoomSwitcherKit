@@ -36,8 +36,3 @@ extension View {
       return zoomSwitcher
    }
 }
-
-// 🏀
-// add lint
-// add codebeat
-// make public
