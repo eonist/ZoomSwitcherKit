@@ -1,5 +1,4 @@
 import UIKit
-import ZoomSwitcherKit
 
 class View: UIView {
    lazy var zoomSwitcher: ZoomSwitcher = createZoomSwitcher()

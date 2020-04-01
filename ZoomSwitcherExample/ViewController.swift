@@ -7,5 +7,5 @@ class ViewController: UIViewController {
       view = View()
       view.backgroundColor = .orange
    }
-   override var prefersStatusBarHidden: Bool { return true }
+   override var prefersStatusBarHidden: Bool { true }
 }
