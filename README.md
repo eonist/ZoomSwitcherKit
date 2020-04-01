@@ -4,7 +4,7 @@
 ZoomSwitcher for different iPhone back-camera types (single, dual, triple)
 
 ### Installation:
-- Carthage: `github "eonist/ZoomSwitcherKit" "master"`
+- SPM: `.package(url: "https://github.com/eonist/ZoomSwitcherKit.git", .branch("master"))`
 
 ### Examples:
 ```swift
