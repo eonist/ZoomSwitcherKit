@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "With",
+        "repositoryURL": "https://github.com/eonist/With.git",
+        "state": {
+          "branch": "master",
+          "revision": "140cd19586482e8f14a5ce971c675c69f1e4f916",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
