@@ -10,8 +10,8 @@ ZoomSwitcher for different iPhone back-camera types (single, dual, triple)
 ```swift
 let backCamType: BackCameraType = .backCameraType
 let size = ZoomSwitcher.getSize(backCamType: backCamType)
-let zoomSwitcher: ZoomSwitcher = .init(frame: .init(origin: .zero, size: size), backCameraType: backCamType) // zoomSwitcher.anchorAndSize(to: self, size: size)
-zoomSwitcher.buttons[backCamType.defaultLenseIndex].toggle = true // for triple cam this needs to be .second,
+let zoomSwitcher: ZoomSwitcher = .init(frame: .init(origin: .zero, size: size), backCameraType: backCamType) zoomSwitcher.anchorAndSize(to: self, size: size)
+zoomSwitcher.buttons[backCamType.defaultLenseIndex].toggle = true
 addSubview(zoomSwitcher)
 zoomSwitcher.onSwitch = { focalType in
    Swift.print("Switched to focalType:  \(focalType)")
