@@ -17,3 +17,5 @@ zoomSwitcher.onSwitch = { focalType in
    Swift.print("Switched to focalType:  \(focalType)")
 }
 ```
+### Todo
+- add spm and github actions
